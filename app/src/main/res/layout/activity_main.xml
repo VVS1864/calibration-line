@@ -1,0 +1,570 @@
+<?xml version= "1.0" encoding= "utf-8" ?>
+<LinearLayout
+    xmlns:android= "http://schemas.android.com/apk/res/android"
+    android:layout_width= "fill_parent"
+    android:layout_height= "fill_parent"
+    android:orientation= "vertical" >
+    <TabHost
+        android:id= "@android:id/tabhost"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent" >
+        <LinearLayout
+            android:layout_width= "match_parent"
+            android:layout_height= "match_parent"
+            android:orientation= "vertical"
+            android:id="@+id/root">
+            <TabWidget
+                android:id= "@android:id/tabs"
+                android:layout_width= "match_parent"
+                android:layout_height= "wrap_content" >
+            </TabWidget>
+            <FrameLayout
+                android:id= "@android:id/tabcontent"
+                android:layout_width= "match_parent"
+                android:layout_height= "match_parent" >
+                <ScrollView
+                    android:layout_width= "match_parent"
+                    android:layout_height= "match_parent"
+                    android:id= "@+id/tvTab1">
+                    <LinearLayout
+                        android:layout_width= "match_parent"
+                        android:layout_height= "match_parent"
+                        android:orientation= "vertical" >
+                        <TableLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/tableLayout1"
+                            android:layout_margin= "10px"
+                            android:stretchColumns= "1, 2, 3">
+                            <TableRow
+                                android:id="@+id/tableRow0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_gravity="center"
+                                    android:text="№">
+                                </TextView>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_gravity="center"
+                                    android:text="Use">
+                                </TextView>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_gravity="center"
+                                    android:text="Concentration">
+                                </TextView>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_gravity="center"
+                                    android:text="Value">
+                                </TextView>
+                            </TableRow>
+                            <TableRow
+                                android:id="@+id/tableRow1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/t1"
+                                    android:layout_gravity="center"
+                                    android:text="1">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox1"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/con1"
+                                    android:text="0.0000">
+                                </TextView>
+                                <EditText
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val1"
+                                    android:layout_width="match_parent"
+
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t2"
+                                    android:layout_gravity="center"
+                                    android:text="2">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox2"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con2"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val2"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t3"
+                                    android:layout_gravity="center"
+                                    android:text="3">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox3"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con3"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val3"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t4"
+                                    android:layout_gravity="center"
+                                    android:text="4">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox4"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con4"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val4"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t5"
+                                    android:layout_gravity="center"
+                                    android:text="5">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox5"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con5"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val5"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t6"
+                                    android:layout_gravity="center"
+                                    android:text="6">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox6"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con6"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val6"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t7"
+                                    android:layout_gravity="center"
+                                    android:text="7">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox7"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con7"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val7"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t8"
+                                    android:layout_gravity="center"
+                                    android:text="8">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox8"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con8"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val8"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t9"
+                                    android:layout_gravity="center"
+                                    android:text="9">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox9"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con9"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val9"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tableRow10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/t10"
+                                    android:layout_gravity="center"
+                                    android:text="10">
+                                </TextView>
+                                <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                    android:id= "@+id/checkBox10"
+                                    android:layout_width= "wrap_content"
+                                    android:layout_height= "wrap_content">
+                                </CheckBox>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/con10"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                                <EditText
+
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/val10"
+                                    android:layout_width="match_parent"
+                                    android:inputType="numberDecimal">
+                                </EditText>
+                            </TableRow>
+                        </TableLayout>
+                        <LinearLayout
+                            android:layout_width= "match_parent"
+                            android:layout_height= "match_parent"
+                            android:orientation= "horizontal" >
+                            <Button
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/btnSave"
+                                android:text="Save">
+                            </Button>
+                            <Button
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/btnLoad"
+                                android:text="Load">
+                            </Button>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width= "match_parent"
+                    android:layout_height= "match_parent"
+                    android:id= "@+id/tvTab2">
+                    <LinearLayout
+                        android:layout_width= "match_parent"
+                        android:layout_height= "match_parent"
+                        android:orientation= "vertical" >
+                        <LinearLayout
+                            android:layout_width= "match_parent"
+                            android:layout_height= "match_parent"
+                            android:orientation= "horizontal"
+                            android:layout_margin= "20px">>
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/use0"
+
+                                android:text="Use current 0">
+                            </TextView>
+                            <CheckBox
+                                    android:onClick="on_click_any"
+
+                                    android:layout_gravity="center"
+                                android:id= "@+id/checkBoxUse0"
+                                android:layout_width= "wrap_content"
+                                android:layout_height= "wrap_content">
+                            </CheckBox>
+                            <EditText
+
+                                android:layout_height="wrap_content"
+                                android:id="@+id/current0"
+                                android:layout_width="match_parent"
+                                android:inputType="numberDecimal">
+                            </EditText>
+                        </LinearLayout>
+
+
+                        <TableLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/table"
+                            android:stretchColumns= "*">
+                            <TableRow
+                                android:id="@+id/tabl"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height= "match_parent"
+                                    android:background="@drawable/border_1"
+                                    android:layout_margin= "10px"
+                                    android:orientation= "vertical" >
+                                    <TextView
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/calc_C_t"
+                                        android:layout_margin= "10px"
+                                        android:layout_gravity="center"
+                                        android:text="Concentration">
+                                    </TextView>
+                                    <TextView
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/calc_C"
+                                        android:layout_margin= "10px"
+                                        android:layout_gravity="center"
+                                        android:text="">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height= "match_parent"
+                                    android:background="@drawable/border_2"
+                                    android:layout_margin= "10px"
+                                    android:orientation= "vertical" >
+                                    <TextView
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/u_value_t"
+                                        android:layout_margin= "10px"
+                                        android:layout_gravity="center"
+                                        android:text="Value">
+                                    </TextView>
+                                    <EditText
+
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/u_value"
+                                        android:layout_margin= "10px"
+                                        android:layout_gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:inputType="numberDecimal">
+                                    </EditText>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width= "wrap_content"
+                            android:layout_height= "match_parent"
+                            android:background="#ff0000"
+                            android:orientation= "horizontal"
+                            android:layout_margin= "10px">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/RSD"
+                                android:layout_margin= "10px"
+                                android:text="RSD %">
+                            </TextView>
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/RSD_val"
+                                android:layout_margin= "10px"
+                                android:text="">
+                            </TextView>
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/canvas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
