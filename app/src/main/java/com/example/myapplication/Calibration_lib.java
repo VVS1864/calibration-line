@@ -70,7 +70,8 @@ public class Calibration_lib {
         }
         else {
             intercept_with_0 = 0;
-            zero_line_intercept = get_point(1).get_cor_value();
+            Calibration_point p = get_point(1);
+            if (p!=null)  zero_line_intercept = p.get_cor_value();
         }
     }
 
