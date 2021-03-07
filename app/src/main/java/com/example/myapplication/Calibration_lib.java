@@ -65,7 +65,8 @@ public class Calibration_lib {
     }
     private void calc_zero_intercept(){
         if(use_current_zero) {
-            intercept_with_0 = current_zero - get_point(1).get_cor_value();
+            Calibration_point p = get_point(1);
+            if (p!=null)  intercept_with_0 = current_zero - p.get_cor_value();
             zero_line_intercept = current_zero;
         }
         else {
